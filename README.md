@@ -28,7 +28,7 @@ pip install -r requirements.txt
 # Download UN data (see Data Sources section)
 
 # Run notebook
-jupyter notebook france_tfr_forecasting.ipynb
+python -m jupyter notebook france_tfr_forecasting.ipynb
 ```
 
 ---
