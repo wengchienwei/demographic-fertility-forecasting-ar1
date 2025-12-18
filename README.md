@@ -11,7 +11,7 @@ Will France's fertility rate recover to replacement level (2.1 children/woman) o
 
 **Key Finding:** France likely stabilizes around **1.72** (below replacement), not 2.1 as global models assume.
 
-![Final Forecast](path/to/forecast_plot.png)
+![Final Forecast](plots/forecast_plot.png)
 *France TFR forecast: Hybrid model vs Raftery benchmark (2024-2075)*
 
 ---
@@ -69,8 +69,7 @@ jupyter notebook france_tfr_forecasting.ipynb
 - Pre-COVID test (2016-2019): Hybrid achieves 100% calibration (80%, 95% PI)
 - France-only model: 0% calibration (σ too small - overconfident)
 
-![Validation](path/to/validation_plot.png)
-*Model Validation*
+![Validation](plots/validation_plot.png)
 
 ---
 
