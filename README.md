@@ -20,6 +20,19 @@ Will France's fertility rate recover to replacement level (2.1 children/woman) o
 
 ---
 
+## Repository Structure
+```
+├── france_tfr_forecasting.ipynb    # Main analysis notebook
+├── requirements.txt                # Python dependencies
+├── plots/                          # Generated visualizations
+│   ├── final_forecast_comparison.png
+│   ├── validation_precovid.png
+│   └── diagnostics.png
+└── README.md                       # This file
+```
+
+---
+
 ## Quick Start
 
 <details>
@@ -79,7 +92,12 @@ python -m jupyter notebook france_tfr_forecasting.ipynb
 - Pre-COVID test (2016-2019): Hybrid achieves 100% calibration (80%, 95% PI)
 - France-only model: 0% calibration (σ too small - overconfident)
 
+<details>
+<summary><b> Model Validation Figure </b></summary>
+  
 ![Validation](plots/validation_precovid.png)
+
+</details>
 
 ---
 
@@ -104,45 +122,6 @@ TFR_t = μ + ρ(TFR_{t-1} - μ) + ε_t,  where ε_t ~ N(0, σ²)
 
 ---
 
-## Skills Developed
-
-**Time Series Analysis:**
-- Stationarity testing (ADF, KPSS)
-- ACF/PACF interpretation
-- AR model fitting & diagnostics
-- Residual analysis (normality, homoskedasticity)
-
-**Statistical Modeling:**
-- Maximum Likelihood Estimation (OLS)
-- Model selection (AIC/BIC, out-of-sample validation)
-- Prediction interval construction
-- Calibration assessment
-
----
-
-## Repository Structure
-```
-├── france_tfr_forecasting.ipynb    # Main analysis notebook
-├── requirements.txt                # Python dependencies
-├── plots/                          # Generated visualizations
-│   ├── final_forecast_comparison.png
-│   ├── validation_precovid.png
-│   └── diagnostics.png
-└── README.md                       # This file
-```
-
----
-
-## Data Sources
-
-**UN World Population Prospects 2024:**
-- [Medium Variant](https://population.un.org/wpp/downloads)
-- [Other Variants (80/95 PI)](https://population.un.org/wpp/downloads)
-
-**Note:** Data files not included due to size.
-
----
-
 ## Limitations & Future Work
 
 **Current Limitations:**
@@ -160,11 +139,37 @@ TFR_t = μ + ρ(TFR_{t-1} - μ) + ε_t,  where ε_t ~ N(0, σ²)
 
 ---
 
+## Data Sources
+
+**UN World Population Prospects 2024:**
+- [Medium Variant](https://population.un.org/wpp/downloads)
+- [Other Variants (80/95 PI)](https://population.un.org/wpp/downloads)
+
+**Note:** Data files not included due to size.
+
+---
+
 ## References
 
 Raftery, A. E., Alkema, L., & Gerland, P. (2014). Bayesian population projections for the United Nations. *Statistical Science*, 29(1), 58-68. [DOI: 10.1214/13-STS419](https://doi.org/10.1214/13-STS419)
 
 United Nations, Department of Economic and Social Affairs, Population Division (2024). *World Population Prospects 2024*. [https://population.un.org/wpp/](https://population.un.org/wpp/)
+
+---
+
+## Skills Developed
+
+**Time Series Analysis:**
+- Stationarity testing (ADF, KPSS)
+- ACF/PACF interpretation
+- AR model fitting & diagnostics
+- Residual analysis (normality, homoskedasticity)
+
+**Statistical Modeling:**
+- Maximum Likelihood Estimation (OLS)
+- Model selection (AIC/BIC, out-of-sample validation)
+- Prediction interval construction
+- Calibration assessment
 
 ---
 
