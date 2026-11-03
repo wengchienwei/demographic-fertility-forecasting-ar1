@@ -11,12 +11,20 @@ Will France's fertility rate recover to replacement level (2.1 children/woman) o
 
 **Key Finding:** France likely stabilizes around **1.72** (below replacement), not 2.1 as global models assume.
 
+<details>
+<summary><b> France TFR forecast: Hybrid model vs Raftery benchmark (2024-2075) Figure </b></summary>
+  
 ![Final Forecast](plots/final_forecast_comparison.png)
-*France TFR forecast: Hybrid model vs Raftery benchmark (2024-2075)*
+
+</details>
 
 ---
 
 ## Quick Start
+
+<details>
+<summary><b>Setup and run, click to expand</b></summary>
+  
 ```bash
 # Clone repository
 git clone https://github.com/wengchienwei/demographic-fertility-forecasting-ar1.git
@@ -30,6 +38,8 @@ pip install -r requirements.txt
 # Run notebook
 python -m jupyter notebook france_tfr_forecasting.ipynb
 ```
+
+</details>
 
 ---
 
@@ -108,18 +118,6 @@ TFR_t = μ + ρ(TFR_{t-1} - μ) + ε_t,  where ε_t ~ N(0, σ²)
 - Prediction interval construction
 - Calibration assessment
 
-**Programming:**
-- Custom Monte Carlo implementation
-- Data wrangling (UN datasets)
-- Reproducible research (Jupyter notebooks)
-- Visualization (matplotlib, comparison plots)
-
-**Critical Thinking:**
-- Model validation strategy
-- Limitation analysis (structural breaks, COVID)
-- Benchmark comparison (UN projections)
-- Hybrid approach innovation
-
 ---
 
 ## Repository Structure
@@ -167,16 +165,6 @@ TFR_t = μ + ρ(TFR_{t-1} - μ) + ε_t,  where ε_t ~ N(0, σ²)
 Raftery, A. E., Alkema, L., & Gerland, P. (2014). Bayesian population projections for the United Nations. *Statistical Science*, 29(1), 58-68. [DOI: 10.1214/13-STS419](https://doi.org/10.1214/13-STS419)
 
 United Nations, Department of Economic and Social Affairs, Population Division (2024). *World Population Prospects 2024*. [https://population.un.org/wpp/](https://population.un.org/wpp/)
-
----
-
-## Author
-
-**Chien-Wei WENG**  
-MSc Data Sciences and Business Analytics  
-CentraleSupélec × ESSEC Business School  
-
-[LinkedIn](https://www.linkedin.com/in/chien-wei-weng-74a6881b8/) 
 
 ---
 
